@@ -1,11 +1,31 @@
-table, td, th { border: 1px solid gray }
+table, td, th {
+/* border: 4px solid orange; */
+border: 0px ;
+border-collapse: collapse;
+vertical-align: top;
+text-align: right;
+}
+
 
 thead > tr:first-child {
 	background-color: #555555;
+	font-family: fantasy, monospace;
+	font-weight: bolder;
+	font-size: 17pt;
 }
 
-/*
-thead {
-	background-color: #555555;
+tbody > tr:nth-child(even) {
+	background-color: gray;
 }
-*/
+
+tbody > tr:hover {
+	background-color: seagreen;
+	color: white;
+	font-weight: bold;
+}
+
+body {
+	background-image: url("WhiteBox.png");
+	background-attachment: fixed;
+	background-size: cover;
+}
