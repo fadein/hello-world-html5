@@ -22,6 +22,7 @@ To get full credit on this assignment you will need to satisfy the following:
 1. Put your webpage's source into a GitHub repository, and submit the GitHub URL in the text entry box on the assignment submission page.
 1. Grant Read/Write access to your C9 workspace to __fadein__, __kamnayadav__, and __vaibhavsahu__. Submit the C9 workspace URL  in the text entry box on the assignment submission page.
 1. At minimum use the following CSS concepts in your updated page:
+
    CSS Properties
    * background-image
    * font-size
