@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-
-    <title>Hey guys!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CSS fixup demonstration</title>
 </head>
-
 <body>
     <h1 class="centered">Erik's Cheat Sheet</h1>
-
     <div>
         <h2 class="centered heading">CSS Attributes</h2>
-
         <p>More information can be found amongst the following resources:</p>
-
         <ul>
-            <li><a href="https://www.w3.org/Style/Examples/007/center.en.html#block">W3 - CSS: centering things</a></li>
-
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN - CSS Reference</a></li>
-
-            <li><a href="https://validator.w3.org/">HTML5 Validation Service</a></li>
+            <li>
+                <a href="https://www.w3.org/Style/Examples/007/center.en.html#block">W3 - CSS: centering things</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN - CSS Reference</a>
+            </li>
+            <li>
+                <a href="https://validator.w3.org/">HTML5 Validation Service</a>
+            </li>
         </ul>
-
-        <table border>
-                <tr bgcolor="#555555">
+        <table>
+            <thead>
+                <tr>
                     <th>Attribute</th>
-
                     <th>Description</th>
-
                     <th>Example</th>
                 </tr>
-
+            </thead>
+            <tbody>
                 <tr>
                     <td class="mono">background-image</td>
-
                     <td>Specifies a background image (or images) for a document element. The first image given is drawn on top, and subsequent (comma-separtated) images are drawn beneath.</td>
-
                     <td>
                         <pre>
 background-image:
@@ -46,14 +42,11 @@ url("WhiteBox.png");
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">background-size</td>
-
                     <td>How large should the background image be displayed?</td>
-
                     <td>
-						<pre>
+                        <pre>
 /* scale the image as much as possible while maintaining the original aspect ratio.
 Any remaining empty areas are filled in with background-color */
 background-size: cover;
@@ -67,15 +60,12 @@ background-size: 75%;
 
 /* width + height */
 background-size: 20% 40%;
-						</pre>
+                                                </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">background-attachment</td>
-
                     <td>Whether the background image should scroll with the page content, or whether it should stay put while the content scrolls by atop it.</td>
-
                     <td>
                         <pre>
 
@@ -90,12 +80,9 @@ background-attachment: scroll;
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">background-color</td>
-
                     <td>Specifies a color to be drawn behind a document element. Can be used as a fallback for an image which cannot be loaded.</td>
-
                     <td>
                         <pre>
 background-color: seagreen;
@@ -105,12 +92,9 @@ background-color: hsl(146, 50%, 36%);
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">width</td>
-
-					<td>Width of an element. This is the horizontal dimension <em>within</em> the padding space; the innermost core of the CSS box model.</td>
-
+                    <td>Width of an element. This is the horizontal dimension <em>within</em> the padding space; the innermost core of the CSS box model.</td>
                     <td>
                         <pre>
 width: 50%;
@@ -118,14 +102,11 @@ width: 200px;
 </pre>
                     </td>
                 </tr>
-
-				<tr>
+                <tr>
                     <td class="mono">margin</td>
-
-					<td><em>Shorthand</em> Specify the width of the margin component of an element per the CSS box model. Set this to <code>auto</code> on the horizontal dimension to center an element within its container.</td>
-
+                    <td><em>Shorthand</em> Specify the width of the margin component of an element per the CSS box model. Set this to <code>auto</code> on the horizontal dimension to center an element within its container.</td>
                     <td>
-						<pre>
+                        <pre>
 /* all sides */
 margin: 10px;
 
@@ -134,19 +115,14 @@ margin: 10px auto;
 
 /* clockwise procession from top, right, bottom, left */
 margin: 1px 2px 1em 2em;
-						</pre>
+                                                </pre>
                     </td>
                 </tr>
-
-
-
                 <tr>
                     <td class="mono">font-size</td>
-
-					<td>Specifies the size of text. May be specified in a variety of units, or with names such as <code>x-small</code>, <code>medium</code>, <code>large</code>, etc.</td>
-
+                    <td>Specifies the size of text. May be specified in a variety of units, or with names such as <code>x-small</code>, <code>medium</code>, <code>large</code>, etc.</td>
                     <td>
-<pre>
+                        <pre>
 font-size: xx-small;
 font-size: larger;
 font-size: 0.9em;
@@ -155,18 +131,11 @@ font-size: 120%;
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">font-family</td>
-
-					<td>Admits the specification of a prioritized list of font names (or classes of fonts) for the browser to try to render.
-						If the browser cannot find a font within the 1st listed family, the next one in the list is tried until a match is found.
-						It is therefore a good idea to end the list with a <em>generic</em> font family so that the browser can at least fall back on
-						something that you picked.
-					</td>
-
+                    <td>Admits the specification of a prioritized list of font names (or classes of fonts) for the browser to try to render. If the browser cannot find a font within the 1st listed family, the next one in the list is tried until a match is found. It is therefore a good idea to end the list with a <em>generic</em> font family so that the browser can at least fall back on something that you picked.</td>
                     <td>
-<pre>
+                        <pre>
 font-family: "DejaVu Sans Bold";
 /* generic font families: good fallback values */
 font-family: serif;
@@ -177,14 +146,11 @@ font-family: fantasy;
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">font-weight</td>
-
                     <td>Specify the boldness of a font</td>
-
                     <td>
-<pre>
+                        <pre>
 font-weight: bold;
 
 /* one step lighter than the prevailing weight */
@@ -195,12 +161,9 @@ font-weight: 400;
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">display</td>
-
-					<td>Specify the type of box in which to render an element (<code>inline</code>, <code>block</display>, etc.). Specifying <code>none</code> will hide an element.</td>
-
+                    <td>Specify the type of box in which to render an element (<code>inline</code>, <code>block, etc.). Specifying <code>none</code> will hide an element.</code></td>
                     <td>
                         <pre>
 display: block;
@@ -208,26 +171,20 @@ display: none;
 </pre>
                     </td>
                 </tr>
-
-				<tr>
+                <tr>
                     <td class="mono">border</td>
-
-					<td><em>Shorthand</em> Specify the appearance of an element's border along all four sides. The values this property can take are a combination of some of the more specific properties discussed below.</td>
-
+                    <td><em>Shorthand</em> Specify the appearance of an element's border along all four sides. The values this property can take are a combination of some of the more specific properties discussed below.</td>
                     <td>
                         <pre>
 border: 1px solid black;
 </pre>
                     </td>
                 </tr>
-				<tr>
+                <tr>
                     <td class="mono">border-width</td>
-
-					<td><em>Shorthand</em> How wide the border should appear. How much space is reserved for the
-					border component of the CSS box model.</td>
-
+                    <td><em>Shorthand</em> How wide the border should appear. How much space is reserved for the border component of the CSS box model.</td>
                     <td>
-						<pre>
+                        <pre>
 /* make all sides the same*/
 border-width: 1px;
 
@@ -236,41 +193,34 @@ border-width: 1cm 2cm;
 
 /* clockwise procession from top, right, bottom, left */
 border-width: 0 1px 0 2px;
-						</pre>
+                                                </pre>
                     </td>
                 </tr>
-
-<tr>
+                <tr>
                     <td class="mono">border-style</td>
-
-					<td><em>Shorthand</em> How to draw the lines comprising the border</td>
-
+                    <td><em>Shorthand</em> How to draw the lines comprising the border</td>
                     <td>
-						<pre>
+                        <pre>
 border-style: solid;
 border-style: dashed;
 border-style: double;
 border-style: dotted;
-						</pre>
+                                                </pre>
                     </td>
                 </tr>
-				<tr>
+                <tr>
                     <td class="mono">border-color</td>
-
-					<td><em>Shorthand</em> Which color to draw the lines comprising the border</td>
-
+                    <td><em>Shorthand</em> Which color to draw the lines comprising the border</td>
                     <td>
-						<pre>
+                        <pre>
 border-color: seagreen;
 border-color: #000000;
-						</pre>
+                                                </pre>
                     </td>
                 </tr>
-				<tr>
+                <tr>
                     <td class="mono">border-collapse</td>
-
                     <td>Whether to merge the borders of adjacent elements.</td>
-
                     <td>
                         <pre>
 border-collapse: collapse;
@@ -278,13 +228,9 @@ border-collapse: separate;
 </pre>
                     </td>
                 </tr>
-
-
                 <tr>
                     <td class="mono">border-bottom</td>
-
                     <td>Specify an element's border, but only along its bottom</td>
-
                     <td>
                         <pre>
 border-bottom: 1px solid black;
@@ -293,9 +239,7 @@ border-bottom: 1px solid black;
                 </tr>
                 <tr>
                     <td class="mono">vertical-align</td>
-
                     <td>Place an element within its container relative to the top, middle, or bottom of its cell.</td>
-
                     <td>
                         <pre>
 vertical-align: super;
@@ -307,17 +251,14 @@ vertical-align: sub;
 </pre>
                     </td>
                 </tr>
-
                 <tr>
                     <td class="mono">text-align</td>
-
-					<td>
-						<ol>
-							<li>Specify the horizontal alignment for a text element</li>
-							<li>Specify your political alignment</li>
-					</ol>
-				</td>
-
+                    <td>
+                        <ol>
+                            <li>Specify the horizontal alignment for a text element</li>
+                            <li>Specify your political alignment</li>
+                        </ol>
+                    </td>
                     <td>
                         <pre>
 text-align: left;
@@ -326,244 +267,189 @@ text-align: right;
 </pre>
                     </td>
                 </tr>
+            </tbody>
         </table>
     </div>
-
     <div>
         <h2 class="centered heading">CSS Selectors</h2>
-
-        <table border>
-                <tr bgcolor="#555555">
-                    <th>Selector</th>
-
-                    <th>Description</th>
-
-                    <th>Example</th>
-                </tr>
-
-				<tr>
-					<td class="mono">:hover</td>
-
-					<td>Select elements over which the mouse cursor is hovering</td>
-
-					<td>
-						<pre>
+        <table>
+            <tr>
+                <th>Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td class="mono">:hover</td>
+                <td>Select elements over which the mouse cursor is hovering</td>
+                <td>
+                    <pre>
 tr:hover { background-color: rgba(160, 160, 160, 0.8); }
-						</pre>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="mono">:visited</td>
-
-					<td>Select links which have been visited</td>
-
-					<td>
-						<pre>
+                                                </pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">:visited</td>
+                <td>Select links which have been visited</td>
+                <td>
+                    <pre>
 a:visited { color: rebeccapurple; }
-						</pre>
-					</td>
-				</tr>
-
-
-				<tr>
-					<td class="mono">:first-of-type</td>
-
-					<td>Select the first element of a type from amongst its siblings</td>
-
-					<td>
-						<pre>
+                                                </pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">:first-of-type</td>
+                <td>Select the first element of a type from amongst its siblings</td>
+                <td>
+                    <pre>
 td:first-of-type {
 vertical-align: middle;
 text-align: center;
 }
-						</pre>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="mono">:nth-child(<code><em>a</em>n+<em>b</em>)</td>
-
-					<td>Pseudo-class to match an element from amongst its siblings.</td>
-
-					<td>
-						<pre>
+                                                </pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">:nth-child(<code><em>a</em>n+<em>b</em>)</code></td>
+                <td>Pseudo-class to match an element from amongst its siblings.</td>
+                <td>
+                    <pre>
 tr:nth-child(2n+1); /* selects the odd-numbered rows of a table */
 tr:nth-child(odd);  /* idem. */
 tr:nth-child(3);    /* selects every third element */
-						</pre>
-					</td>
-				</tr>
+                                                </pre>
+                </td>
+            </tr>
         </table>
     </div>
-
     <div>
         <h2 class="centered heading">Color specifications</h2>
-
-        <table border>
-                <tr bgcolor="#555555">
-                    <th>Notation</th>
-
-                    <th>Description</th>
-
-                    <th>Example</th>
-                </tr>
-
-                <tr>
-                    <td class="mono">Hexadecimal notation</td>
-
-                    <td>Hexadecimal representation of RGB or RGBA channels. Setting the alpha channel controls the transparency of the resulting color.</td>
-
-                    <td>
-                        <pre>
+        <table>
+            <tr>
+                <th>Notation</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td class="mono">Hexadecimal notation</td>
+                <td>Hexadecimal representation of RGB or RGBA channels. Setting the alpha channel controls the transparency of the resulting color.</td>
+                <td>
+                    <pre>
 color: #FF0033;
 background-color: #aabbccdd;
                                                 
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">RGB function notation</td>
-
-                    <td>Specify a color using decimal numerals within what appears to be a function call. Opaque colors may be specified with the rgb() functional notation. The alpha (transparency) channel can be specified as a percentage or as a fractional number between (0.0, 1.0)</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">RGB function notation</td>
+                <td>Specify a color using decimal numerals within what appears to be a function call. Opaque colors may be specified with the rgb() functional notation. The alpha (transparency) channel can be specified as a percentage or as a fractional number between (0.0, 1.0)</td>
+                <td>
+                    <pre>
 color: rgb(255, 0, 51);
 background-color: rgba(170, 187, 204, 221);
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">HSL function notation</td>
-
-                    <td>With syntax congruent with the rgb() and rgba() notations, specify a color in the HSL(A) (hue, saturation, lightness (alpha)) color space.</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">HSL function notation</td>
+                <td>With syntax congruent with the rgb() and rgba() notations, specify a color in the HSL(A) (hue, saturation, lightness (alpha)) color space.</td>
+                <td>
+                    <pre>
 color: hsl(192, 60%, 51%);
 background-color: hsla(170, 20%, 89%, 95%);
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">Color name</td>
-
-                    <td>Specify a color by name. Obviously, different people will disagree on exactly what "Pale Violet Red" looks like, and so some standard list of colors must exist for this to be a viable option.</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">Color name</td>
+                <td>Specify a color by name. Obviously, different people will disagree on exactly what "Pale Violet Red" looks like, and so some standard list of colors must exist for this to be a viable option.</td>
+                <td>
+                    <pre>
 color: seagreen;
 color: rebeccapurple;
 </pre>
-                    </td>
-                </tr>
+                </td>
+            </tr>
         </table>
     </div>
-
     <div>
         <h2 class="centered heading">Unix Commands</h2>
-
-        <table border>
-                <tr bgcolor="#555555">
-                    <th>Command</th>
-
-                    <th>Description</th>
-
-                    <th>Example</th>
-                </tr>
-
-                <tr>
-                    <td class="mono">ls</td>
-
-                    <td>List filesystem objects</td>
-
-                    <td>
-                        <pre>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td class="mono">ls</td>
+                <td>List filesystem objects</td>
+                <td>
+                    <pre>
 $ ls
 README.md
 funny-cat-gif-animation-1223.gif
 hello-world.html
                                         
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">cat</td>
-
-                    <td>
-                        <ol>
-							<li>Concatenate the contents of multiple files together to <code>STDOUT</code></li>
-
-							<li>Copy <code>STDIN</code> to <code>STDOUT</code></li>
-                        </ol>
-                    </td>
-
-                    <td>
-                        <pre>
-$ cat < /dev/null 
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">cat</td>
+                <td>
+                    <ol>
+                        <li>Concatenate the contents of multiple files together to <code>STDOUT</code></li>
+                        <li>Copy <code>STDIN</code> to <code>STDOUT</code></li>
+                    </ol>
+                </td>
+                <td>
+                    <pre>
+$ cat &lt; /dev/null 
 These words go to /dev/null until I type EOF (ctrl-d)
 ^D
 $
                                         
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">echo</td>
-
-					<td>Print arguments to <code>STDOUT</code></td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">echo</td>
+                <td>Print arguments to <code>STDOUT</code></td>
+                <td>
+                    <pre>
 $ echo one two 3 four
 one two 3 four
                                         
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">stty</td>
-
-                    <td>Display or modify terminal characteristics</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">stty</td>
+                <td>Display or modify terminal characteristics</td>
+                <td>
+                    <pre>
 $ stty
 speed 38400 baud; line = 0;
 -brkint -imaxbel iutf8
                                         
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">date</td>
-
-                    <td>display the system date in a variety of formats</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">date</td>
+                <td>display the system date in a variety of formats</td>
+                <td>
+                    <pre>
 $ date +%s
 1486362244
                                         
 </pre>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">ftp</td>
-
-                    <td>Connect to an FTP server in an interactive session</td>
-
-                    <td>
-                        <pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="mono">ftp</td>
+                <td>Connect to an FTP server in an interactive session</td>
+                <td>
+                    <pre>
 $ ftp unnovative.net
 Connected to localhost (127.0.0.1).
 220 Welcome to unnovative.net FTP service.
@@ -573,11 +459,11 @@ Password:
 230 Login successful.
 Remote system type is UNIX.
 Using binary mode to transfer files.
-ftp>
+ftp&gt;
                                         
 </pre>
-                    </td>
-                </tr>
+                </td>
+            </tr>
         </table>
     </div>
 </body>

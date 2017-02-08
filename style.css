@@ -1,0 +1,11 @@
+table, td, th { border: 1px solid gray }
+
+thead > tr:first-child {
+	background-color: #555555;
+}
+
+/*
+thead {
+	background-color: #555555;
+}
+*/
